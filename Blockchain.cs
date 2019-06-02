@@ -1,14 +1,15 @@
 using System;
+using System.Text;
 using System.Collections.Generic;
 using System.Security.Cryptography;
-using System.Text;
 
 namespace BlockchainProgram
 {
     public class Blockchain  
     {  
         public int Difficulty { set; get; } = 2;
-        public IList<Block> Chain { set;  get; } 
+        public IList<Block> Chain { set;  get; }
+        IList<Transaction> PendingTransactions = new List<Transaction>();  
     
         public Blockchain()  
         {  
@@ -28,7 +29,7 @@ namespace BlockchainProgram
     
         public Block CreateGenesisBlock()  
         {  
-            return new Block(DateTime.Now, null, "{}");  
+            return new Block(DateTime.Now, null, null);  
         }
         
         public Block GetLatestBlock()  
@@ -44,6 +45,11 @@ namespace BlockchainProgram
             block.Mine(this.Difficulty);  
             Chain.Add(block);  
         }
+
+        public void CreateTransaction(Transaction transaction)  
+        {  
+            PendingTransactions.Add(transaction);
+        } 
 
         public bool IsValid()  
         {  
