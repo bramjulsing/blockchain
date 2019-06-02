@@ -1,0 +1,11 @@
+/Users/bramjulsing/OneDrive/Documents/Zakelijk/Forcelution/Development_Projects/Blockchain/bin/Debug/netcoreapp2.2/Blockchain.deps.json
+/Users/bramjulsing/OneDrive/Documents/Zakelijk/Forcelution/Development_Projects/Blockchain/bin/Debug/netcoreapp2.2/Blockchain.runtimeconfig.json
+/Users/bramjulsing/OneDrive/Documents/Zakelijk/Forcelution/Development_Projects/Blockchain/bin/Debug/netcoreapp2.2/Blockchain.runtimeconfig.dev.json
+/Users/bramjulsing/OneDrive/Documents/Zakelijk/Forcelution/Development_Projects/Blockchain/bin/Debug/netcoreapp2.2/Blockchain.dll
+/Users/bramjulsing/OneDrive/Documents/Zakelijk/Forcelution/Development_Projects/Blockchain/bin/Debug/netcoreapp2.2/Blockchain.pdb
+/Users/bramjulsing/OneDrive/Documents/Zakelijk/Forcelution/Development_Projects/Blockchain/obj/Debug/netcoreapp2.2/Blockchain.csprojAssemblyReference.cache
+/Users/bramjulsing/OneDrive/Documents/Zakelijk/Forcelution/Development_Projects/Blockchain/obj/Debug/netcoreapp2.2/Blockchain.csproj.CoreCompileInputs.cache
+/Users/bramjulsing/OneDrive/Documents/Zakelijk/Forcelution/Development_Projects/Blockchain/obj/Debug/netcoreapp2.2/Blockchain.AssemblyInfoInputs.cache
+/Users/bramjulsing/OneDrive/Documents/Zakelijk/Forcelution/Development_Projects/Blockchain/obj/Debug/netcoreapp2.2/Blockchain.AssemblyInfo.cs
+/Users/bramjulsing/OneDrive/Documents/Zakelijk/Forcelution/Development_Projects/Blockchain/obj/Debug/netcoreapp2.2/Blockchain.dll
+/Users/bramjulsing/OneDrive/Documents/Zakelijk/Forcelution/Development_Projects/Blockchain/obj/Debug/netcoreapp2.2/Blockchain.pdb
