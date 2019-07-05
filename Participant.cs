@@ -4,8 +4,15 @@ namespace BlockchainProgram
         public string Name { get; set; }
         public int Balance { get; set; }
 
-        public Participant(string name){
+        public Participant(string name)
+        {
             Name = name;
+            Balance = 0;
+        }
+
+        public Participant()
+        {
+            Name = "Unknown";
             Balance = 0;
         }
     }

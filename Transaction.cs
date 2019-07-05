@@ -5,6 +5,8 @@ namespace BlockchainProgram
         public string FromAddress { get; set; }
         public string ToAddress { get; set; }
         public int Amount { get; set; }
+        // Participant From { get; set; }
+        // Participant To { get; set; }
 
         public Transaction(string fromAddress, string toAddress, int amount)
         {
@@ -13,12 +15,16 @@ namespace BlockchainProgram
             Amount = amount;
         }
 
-        /*
-        public void Execute()
-        {
-            From.Balance =- Amount;
-            To.Balance += Amount;
-        }
-        */
+        // public Transaction(Participant fromParticipant, Participant toParticipant, int amount)
+        // {
+        //     From = fromParticipant;
+        //     To = toParticipant;
+        //     Amount = amount;
+        // }
+        // public void Execute()
+        // {
+        //     From.Balance =- Amount;
+        //     To.Balance += Amount;
+        // }
     }
 }
