@@ -5,10 +5,10 @@ namespace BlockchainProgram
 {
     public class Blockchain
     {
-        IList<Transaction> PendingTransactions = new List<Transaction>();
-        public IList<Block> Chain { set;  get; }
         public int Difficulty { set; get; } = 2;
-        public int Reward = 1; //1 cryptocurrency
+        public int Reward = 1; // 1 cryptocurrency
+        public IList<Block> Chain { set;  get; }
+        IList<Transaction> PendingTransactions = new List<Transaction>();
 
         public Blockchain()
         {
@@ -40,17 +40,27 @@ namespace BlockchainProgram
             return Chain[Chain.Count - 1];
         }
 
-        public void CreateTransaction(Transaction transaction)
+        public void SubmitTransaction(Transaction transaction)
         {
             PendingTransactions.Add(transaction);
         }
-        public void ProcessPendingTransactions(string minerAddress)
+
+        // public void ExecuteTransactions()
+        // {
+        //     Console.WriteLine(JsonConvert.SerializeObject(PendingTransactions, Formatting.Indented));
+        //     foreach (Transaction transaction in PendingTransactions)
+        //     {
+        //         transaction.Execute();
+        //     }
+        // }
+
+        public void ProcessPendingTransactions(String miner)
         {
             Block block = new Block(DateTime.Now, GetLatestBlock().Hash, PendingTransactions);
             AddBlock(block);
 
             PendingTransactions = new List<Transaction>();
-            CreateTransaction(new Transaction(null, minerAddress, Reward));
+            SubmitTransaction(new Transaction(null, miner, Reward));
         }
 
         public void AddBlock(Block block)
